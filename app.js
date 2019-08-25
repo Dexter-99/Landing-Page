@@ -91,7 +91,7 @@ function getFocus()
     focus.textContent='[Enter Focus]'
   }
   else{
-    focus.textContent=localStorage.getItem('name');
+    focus.textContent=localStorage.getItem('focus');
   }
 }
 function setName(e)
@@ -115,7 +115,7 @@ function setFocus(e)
     if(e.keyCode==13)
     {
       localStorage.setItem('focus',e.target.innerText);
-      name.blur();  
+      focus.blur();  
     }
   }
   else{
